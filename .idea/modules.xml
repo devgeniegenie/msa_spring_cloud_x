@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/API Gateway Service/first-service/first-service.iml" filepath="$PROJECT_DIR$/API Gateway Service/first-service/first-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/first-service/first-service.iml" filepath="$PROJECT_DIR$/first-service/first-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/msa(spring_cloud).iml" filepath="$PROJECT_DIR$/.idea/msa(spring_cloud).iml" />
-      <module fileurl="file://$PROJECT_DIR$/API Gateway Service/second-service/second-service.iml" filepath="$PROJECT_DIR$/API Gateway Service/second-service/second-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/API Gateway Service/zuul-service/zuul-service.iml" filepath="$PROJECT_DIR$/API Gateway Service/zuul-service/zuul-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/second-service/second-service.iml" filepath="$PROJECT_DIR$/second-service/second-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-service/zuul-service.iml" filepath="$PROJECT_DIR$/zuul-service/zuul-service.iml" />
     </modules>
   </component>
 </project>
