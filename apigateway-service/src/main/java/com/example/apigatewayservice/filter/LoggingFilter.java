@@ -21,6 +21,7 @@ public class LoggingFilter extends AbstractGatewayFilterFactory<LoggingFilter.Co
 
     @Override
     public GatewayFilter apply(Config config) {
+
         /*return (exchange, chain) -> {
             ServerHttpRequest request = exchange.getRequest();
             ServerHttpResponse response = exchange.getResponse();
@@ -37,6 +38,7 @@ public class LoggingFilter extends AbstractGatewayFilterFactory<LoggingFilter.Co
                 }
             }));
         };*/
+
         GatewayFilter filter = new OrderedGatewayFilter((exchange, chain) -> {
             ServerHttpRequest request = exchange.getRequest();
             ServerHttpResponse response = exchange.getResponse();
@@ -51,6 +53,7 @@ public class LoggingFilter extends AbstractGatewayFilterFactory<LoggingFilter.Co
                     log.info("Logging POST filter: response code -> {}", response.getStatusCode());
                 }
             }));
+            //필터 우선순위 설정
 //        }, Ordered.HIGHEST_PRECEDENCE);
         }, Ordered.LOWEST_PRECEDENCE);
 
