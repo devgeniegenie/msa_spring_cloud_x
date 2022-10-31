@@ -1,4 +1,4 @@
-package com.example.jpa;
+package com.example.catalogservice.jpa;
 
 import lombok.Data;
 import org.hibernate.annotations.ColumnDefault;

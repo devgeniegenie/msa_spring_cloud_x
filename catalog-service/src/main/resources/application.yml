@@ -10,23 +10,23 @@ spring:
     username: root
     password: 1a2a3a4a
   jpa:
-    database: mysql
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-
+    defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
     show-sql: true
     generate-ddl: true
-    properties:
-      hibernate:
-        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  sql:
+    init:
+      mode: always
 
 eureka:
   instance:
     #    instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
-    registry-with-eureka: true
+    register-with-eureka: true
     fetch-registry: true
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka

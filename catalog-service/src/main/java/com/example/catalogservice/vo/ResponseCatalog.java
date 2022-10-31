@@ -1,4 +1,4 @@
-package com.example.vo;
+package com.example.catalogservice.vo;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
