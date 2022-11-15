@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: user-service
+  cloud:
+    config:
+      name: ecommerce
+  config:
+    import: "optional:configserver:http://localhost:8888/"
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/msa_test?serverTimezone=Asia/Seoul
@@ -36,6 +41,6 @@ logging:
   level:
     com.example.userservice: DEBUG
 
-token:
-  expiration_time: 86400000
-  secret: user_token
+#token:
+#  expiration_time: 86400000
+#  secret: user_token

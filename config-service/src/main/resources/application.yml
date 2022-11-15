@@ -8,4 +8,4 @@ spring:
     config:
       server:
         git:
-          uri: file://C:/toy/msa(spring_cloud)/git-local-repo
+          uri: file:///C:/toy/git-local-repo
